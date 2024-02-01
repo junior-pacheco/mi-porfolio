@@ -7,7 +7,7 @@ import Contact from './components/contact/index';
 
 const App = () => {
   return (
-      <div className='h-[100vh]'>
+      <div className='h-[100vh] bg-gray-900'>
         <Header />
         <main>
         <Routes>

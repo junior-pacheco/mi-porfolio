@@ -18,7 +18,7 @@ const Header = () => {
         </button>
       </div>
       {isMenuOpen && (
-        <div className="sm:hidden absolute top-16 right-4 bg-slate-800/90 border-gray-100 border p-2 rounded-md shadow-md">
+        <div className="sm:hidden absolute top-16 right-4 bg-slate-800 border-gray-100 border p-2 rounded-md shadow-md">
           <ul className="flex flex-col space-y-2">
             <li>
               <Link to="/" className="text-white text-xl hover:underline" onClick={toggleMenu}>About</Link>
