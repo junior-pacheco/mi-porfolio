@@ -33,7 +33,7 @@ const Projects = () => {
           es una plataforma donde los administradores crean tareas y los usuarios pueden ver la lista de tareas pendientes. Los usuarios pueden confirmar cuando completan una tarea. Una solución sencilla para la gestión colaborativa de tareas.
           </p>
           <a
-            href="taskmanagerjp.netlify.app"
+            href="https://taskmanagerjp.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"
