@@ -1,10 +1,9 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import { MaterialSymbolsDownload } from '../../../public/icons/icons';
 import CvElkin from '../../../public/pdf/cv.pdf';
 import emailjs from 'emailjs-com';
-import {  toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 
 emailjs.init('M3ZC5gpi1W4VGfIhY');
 
@@ -20,13 +19,13 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     const templateParams = {
       from_name: e.target.from_name.value,
       message_id: e.target.message_id.value,
       message: e.target.message.value,
     };
-  
+
     try {
       await emailjs.send('service_1kfhdae', 'template_l8e1xxu', templateParams);
       console.log('Correo electrónico enviado con éxito');
@@ -40,15 +39,12 @@ const Contact = () => {
       toast.error('Failed to send email. Please try again.');
     }
   };
-  
+
   return (
-    <div className="flex h-[90vh] bg-slate-900">
-      {/* Contenedor verde */}
-      <div className='2xl:flex 2xl:flex-col 2xl:justify-center w-[50%] p-8'>
-        {/* Tarjeta (Card) */}
-        <div className="max-w-md mx-auto 2xl:w-[50%] bg-slate-800 rounded-xl overflow-hidden shadow-md p-8">
+    <div className="flex flex-col md:flex-row  h-[88vh] bg-slate-900 overflow-y-auto">
+      <div className="md:w-[50%] p-8">
+        <div className="max-w-md mx-auto bg-slate-800 rounded-xl overflow-hidden shadow-md p-8 mb-4">
           <h1 className="text-2xl font-bold mb-4 text-green-400">Contacto</h1>
-          {/* Formulario */}
           <form className="text-black" ref={formRef} onSubmit={handleSubmit}>
             <div className="mb-4">
               <label htmlFor="from_name" className="block text-sm font-medium text-white">
@@ -85,7 +81,7 @@ const Contact = () => {
                 className="mt-1 p-2 w-full border border-gray-300 rounded-md"
               ></textarea>
             </div>
-            <div className='flex justify-end items-center'>
+            <div className="flex justify-end">
               <button
                 type="submit"
                 className="bg-blue-500 w-[110px] text-white py-2 px-4 rounded-md hover:bg-blue-600"
@@ -97,20 +93,20 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className='flex flex-col justify-center items-center w-[50%] p-8 space-y-4'>
-        <div className="flex-col justify-center  items-center">
-          <h1 className="text-3xl font-bold mb-4 text-green-400">Download Cv</h1>
-        <a
-          href={CvElkin}  
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 flex justify-center hover:underline"
-          onClick={handleDownload}
-        >
-          <MaterialSymbolsDownload />
-        </a>
-        </div>
-      </div>
+      <div className="md:w-[50%] p-8 flex flex-col bg-slate-900 justify-center items-center space-y-4">
+  <div className="text-center">
+    <h1 className="text-3xl font-bold mb-4 text-green-400">Download Cv</h1>
+    <a
+      href={CvElkin}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline inline-block mx-auto" // Añade la clase mx-auto aquí
+      onClick={handleDownload}
+    >
+      <MaterialSymbolsDownload />
+    </a>
+  </div>
+</div>
     </div>
   );
 };

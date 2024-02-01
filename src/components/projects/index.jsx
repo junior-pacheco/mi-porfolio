@@ -33,7 +33,7 @@ const Projects = () => {
           es una plataforma donde los administradores crean tareas y los usuarios pueden ver la lista de tareas pendientes. Los usuarios pueden confirmar cuando completan una tarea. Una solución sencilla para la gestión colaborativa de tareas.
           </p>
           <a
-            href="url_del_proyecto_2"
+            href="taskmanagerjp.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"
@@ -50,7 +50,7 @@ const Projects = () => {
           Desarrollé un sistema de autenticación basado en Firebase para gestionar el proceso de inicio de sesión de usuarios en una aplicación web. Firebase Authentication proporciona una solución segura y fácil de implementar para la gestión de usuarios, manejo de contraseñas y autenticación con proveedores externos.
           </p>
           <a
-            href="url_del_proyecto_2"
+            href="https://loginjp.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"

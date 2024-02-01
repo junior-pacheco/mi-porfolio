@@ -1,14 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <header className="flex items-center justify-between gap-11 text-2xl bg-slate-800 h-[10vh] p-4">
+    <header className="flex items-center justify-between gap-11 text-2xl bg-slate-800 p-4 relative">
       <h1 className="text-2xl text-white font-semibold">{'< Mi Porfolio >'}</h1>
-      <nav className="flex space-x-4 text-white mt-2 font-semibold">
-        <Link to="/" className="hover:underline">About</Link>
-        <Link to="/projects" className="hover:underline">Projects</Link>
-        <Link to="/contact" className="hover:underline">Contact</Link>
+      <div className="sm:hidden">
+        <button onClick={toggleMenu} className="text-white focus:outline-none">
+          {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+        </button>
+      </div>
+      {isMenuOpen && (
+        <div className="sm:hidden fixed top-0 right-0 left-0 bottom-0 bg-slate-800/90 border-gray-100 border p-2 rounded-md shadow-md">
+          <ul className="flex flex-col space-y-2">
+            <li>
+              <Link to="/" className="text-white text-xl hover:underline" onClick={toggleMenu}>About</Link>
+            </li>
+            <li>
+              <Link to="/projects" className="text-white text-xl  hover:underline" onClick={toggleMenu}>Projects</Link>
+            </li>
+            <li>
+              <Link to="/contact" className="text-white text-xl  hover:underline" onClick={toggleMenu}>Contact</Link>
+            </li>
+          </ul>
+        </div>
+      )}
+      <nav className={`sm:flex sm:space-x-4 text-white mt-2 font-semibold hidden sm:block`}>
+        <ul className="sm:flex space-x-4">
+          <li className="block sm:inline">
+            <Link to="/" className="hover:underline">About</Link>
+          </li>
+          <li className="block sm:inline">
+            <Link to="/projects" className="hover:underline">Projects</Link>
+          </li>
+          <li className="block sm:inline">
+            <Link to="/contact" className="hover:underline">Contact</Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );
