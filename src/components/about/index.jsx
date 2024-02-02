@@ -5,15 +5,15 @@ const About = () => {
   return (
     <div className="bg-slate-900 text-white min-h-[90vh] h-full overflow-y-auto flex flex-col md:flex-row">
 
-      <div className="md:w-1/2 p-10 flex flex-col justify-center  items-center flex-1">
+      <div className="md:w-1/2 p-10 flex flex-col justify-center items-center flex-1">
         <div className='mb-5'>
-          <p className="text-white 2xl:text-2xl text-base text-center md:text-left">
+          <p className="text-white 2xl:text-3xl text-base text-center  md:text-left">
             ¡Hola! Soy ElKIN PACHECO, Un apasionado por la creación de experiencias web impresionantes, con habilidades sólidas en diseño y tecnología. Me mantengo actualizado y comprometido con la comunicación efectiva y la colaboración en equipo para lograr los mejores resultados posibles.
           </p>
         </div>
         <div className="text-white p-5 flex-col flex justify-center gap-5">
           <h2 className="2xl:text-3xl text-2xl text-green-400 font-semibold">Skills</h2>
-          <ul className="list-disc text-lg list-inside">
+          <ul className="list-disc text-base list-inside">
             <li>Desarrollo web y software con React, Next, Vite, Vue</li>
             <li>HTML5, CSS3 y Sass</li>
             <li>Estilización con Tailwind CSS</li>
@@ -24,7 +24,7 @@ const About = () => {
             <li>Metodología SCRUM</li>
           </ul>
           <h2 className="2xl:text-3xl text-2xl text-green-400 font-semibold mt-5">Tools</h2>
-          <ul className="list-disc text-lg list-inside">
+          <ul className="list-disc text-base list-inside">
             <li>Manejo de proyectos con PM2 (básico)</li>
             <li>Visual Studio Code</li>
             <li>Git lad</li>
