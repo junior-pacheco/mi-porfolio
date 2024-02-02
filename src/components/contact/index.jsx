@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row  h-[88vh] bg-slate-900 overflow-y-auto">
+    <div className="flex flex-col md:flex-row  bg-slate-900 overflow-y-auto">
       <div className="md:w-[50%] p-8">
         <div className="max-w-md mx-auto bg-slate-800 rounded-xl overflow-hidden shadow-md p-8 mb-4">
           <h1 className="text-2xl font-bold mb-4 text-green-400">Contacto</h1>

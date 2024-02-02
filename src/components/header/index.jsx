@@ -11,7 +11,15 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between gap-11 text-2xl bg-slate-800 p-4 relative">
-      <h1 className="text-2xl text-white font-semibold">{'< Mi Porfolio >'}</h1>
+      {/* <h1 className="text-2xl text-white font-semibold">{'< Mi Porfolio >'}</h1> */}
+      <a
+            href="/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:underline"
+          >
+           Mi profolio
+          </a>
       <div className="sm:hidden">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
           {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
