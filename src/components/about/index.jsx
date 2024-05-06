@@ -15,7 +15,7 @@ const About = () => {
     <div className="bg-slate-900 gap-7 text-white min-h-screen flex flex-col justify-center items-center">
         <Element name="about" className="w-full p-5 mt-2 gap-5 flex flex-col justify-center items-center" style={{ height: "100vh" }}>
         <motion.p className={`text-center text-4xl md:text-6xl`} initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} onAnimationComplete={handleAnimationComplete}>
-          Hello! I Am Elkin Pacheco
+          Hello! I Am <span className='text-yellow-500 font-bold'>Elkin Pacheco</span>
         </motion.p>
         <motion.span className={`text-center text-3xl md:text-4xl font-bold text-blue-500`} initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           a developer frontend

@@ -13,7 +13,7 @@ const Contact = () => {
     <div className="p-2 md:p-4 flex gap-5  items-center justify-center  text-white rounded-md">
       <button
         onClick={handleDownload}
-        className="bg-white font-bold h-[60px]  w-[210px] text-blue-500 py-1 px-2 md:py-2 md:px-4 rounded-md hover:bg-blue-100 hover:text-blue-600 transition duration-300"
+        className="bg-white font-bold h-[60px] w-[210px] text-blue-500 py-1 px-2 md:py-2 md:px-4 rounded-md hover:bg-blue-100 hover:text-blue-600 transition duration-300"
       >
         Download CV
       </button>
