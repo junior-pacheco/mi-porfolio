@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between gap-11 text-2xl bg-slate-800 p-4 relative">
-      <Link to="/" className="text-white hover:underline">Mi profolio</Link>
+      <Link to="/" className="text-white hover:underline">My portfolio</Link>
       <div className="sm:hidden">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
           {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
