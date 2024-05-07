@@ -2,16 +2,20 @@
 import React from 'react';
 import { IconJamPadlockF } from '../../../public/icons/icons';
 import { DeviconHtml5, IconTailwindcss, Iconjs, IconNodejs, IconReact, IconVue, IconVitejs, IconSass, IconCss3, IconNextjs, IconPm2,  IconFigma, IconTypescript, IconDocker, IconFeGit } from '../../../public/icons/icons';
-
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Projects = () => {
   return (
     <div className="p-10 bg-slate-900 overflow-y-auto">
-      <h1 className="text-3xl font-bold text-yellow-500 mb-4">Projects</h1>
+      <div className='text-center mb-5'>
+        <h1 className="text-3xl font-bold text-yellow-500 mb-4">Experience</h1>
+        <p className='text-white mb-2 text-base md:text-xl'>Desarrollador de software y web en <span className='font-bold'>Colmotica S.A.S</span> desde agosto de 2022 hasta la actualidad</p>
+      </div>
 
+      <h1 className="text-3xl font-bold text-yellow-500 mb-4">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Proyecto 1 */}
-        <div className="bg-slate-800/90 p-4 rounded-2xl shadow-md">
+        <motion.div whileHover={{ scale: 1.05 }} className="bg-slate-800/90 p-4 shadow-2xl rounded-2xl ">
           <div className=' flex items-center mb-2 justify-between'>
         <h2 className="text-xl text-green-400 font-semibold mb-2 inline-flex items-end">Tekneo</h2>
         <IconJamPadlockF/>
@@ -19,10 +23,10 @@ const Projects = () => {
           <p className="text-white mb-2">
           Es una solución tecnológica para mejorar la eficiencia y seguridad en empresas, permitiendo visualizar cámaras de seguridad, llevar un registro de horarios de ingreso y gestionar accesos a diferentes áreas,conectadas a equipos domoticas.
           </p>
-        </div>
+        </motion.div>
 
         {/* Proyecto 2 */}
-        <div className="bg-slate-800/90 p-4 rounded-2xl shadow-md">
+        <motion.div whileHover={{ scale: 1.05 }} className="bg-slate-800/90 p-4 rounded-2xl shadow-2xl">
         <div className=' flex items-center justify-between'>
         <h2 className="text-xl text-green-400 font-semibold mb-2 inline-flex items-end">Node maker</h2>
         <IconJamPadlockF/>
@@ -30,10 +34,10 @@ const Projects = () => {
           <p className="text-white mb-2">
           Es un proyecto que simplifica la creación y gestión de fuentes de datos KNX y MQTT en una red local. Facilita la comunicación entre ellas, permite crear perfiles y rutas, y ofrece una interfaz de monitoreo para visualizar datos. El software facilita el envío de datos entre fuentes, promoviendo una gestión eficiente de la red.
           </p>
-        </div>
+        </motion.div>
 
         {/* Proyecto 3 */}
-        <div className="bg-slate-800/90 p-4 rounded-2xl shadow-md">
+        <motion.div whileHover={{ scale: 1.05 }} className="bg-slate-800/90 p-4 rounded-2xl shadow-2xl">
           <h2 className="text-xl text-green-400  font-semibold mb-2">Task Manager</h2>
           <p className="text-white mb-2">
           es una plataforma donde los administradores crean tareas y los usuarios pueden ver la lista de tareas pendientes. Los usuarios pueden confirmar cuando completan una tarea. Una solución sencilla para la gestión colaborativa de tareas.
@@ -46,11 +50,11 @@ const Projects = () => {
           >
             Ver proyecto
           </a>
-        </div>
+        </motion.div>
 
 
         {/* Proyecto 4 */}
-        <div className="bg-slate-800/90 p-4 rounded-2xl shadow-md">
+        <motion.div whileHover={{ scale: 1.05 }} className="bg-slate-800/90 p-4 rounded-2xl shadow-2xl">
           <h2 className="text-xl text-green-400  font-semibold mb-2">Login</h2>
           <p className="text-white mb-2">
           Desarrollé un sistema de autenticación basado en Firebase para gestionar el proceso de inicio de sesión de usuarios en una aplicación web. Firebase Authentication proporciona una solución segura y fácil de implementar para la gestión de usuarios, manejo de contraseñas y autenticación con proveedores externos.
@@ -63,7 +67,7 @@ const Projects = () => {
           >
             Ver proyecto
           </a>
-        </div>
+        </motion.div>
       </div>
       
 <div className="w-full p-10">
