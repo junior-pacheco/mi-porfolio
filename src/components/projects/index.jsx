@@ -7,11 +7,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 const Projects = () => {
   return (
     <div className="p-10 bg-slate-900 overflow-y-auto">
-      <div className='text-center mb-5'>
-        <h1 className="text-3xl font-bold text-yellow-500 mb-4">Experience</h1>
-        <p className='text-white mb-2 text-base md:text-xl'>Desarrollador de software y web en <span className='font-bold'>Colmotica S.A.S</span> desde agosto de 2022 hasta la actualidad</p>
-      </div>
-
       <h1 className="text-3xl font-bold text-yellow-500 mb-4">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Proyecto 1 */}
@@ -21,7 +16,7 @@ const Projects = () => {
         <IconJamPadlockF/>
           </div>
           <p className="text-white mb-2">
-          Es una solución tecnológica para mejorar la eficiencia y seguridad en empresas, permitiendo visualizar cámaras de seguridad, llevar un registro de horarios de ingreso y gestionar accesos a diferentes áreas,conectadas a equipos domoticas.
+            It's a technological solution aimed at enhancing efficiency and security in companies, enabling the visualization of security cameras, keeping a record of entry times, and managing access to different areas connected to home automation systems.
           </p>
         </motion.div>
 
@@ -32,7 +27,7 @@ const Projects = () => {
         <IconJamPadlockF/>
           </div>
           <p className="text-white mb-2">
-          Es un proyecto que simplifica la creación y gestión de fuentes de datos KNX y MQTT en una red local. Facilita la comunicación entre ellas, permite crear perfiles y rutas, y ofrece una interfaz de monitoreo para visualizar datos. El software facilita el envío de datos entre fuentes, promoviendo una gestión eficiente de la red.
+            It's a project that simplifies the creation and management of KNX and MQTT data sources on a local network. It facilitates communication between them, allows for the creation of profiles and routes, and provides a monitoring interface for data visualization. The software streamlines data transfer between sources, promoting efficient network management.
           </p>
         </motion.div>
 
@@ -40,7 +35,7 @@ const Projects = () => {
         <motion.div whileHover={{ scale: 1.05 }} className="bg-slate-800/90 p-4 rounded-2xl shadow-2xl">
           <h2 className="text-xl text-green-400  font-semibold mb-2">Task Manager</h2>
           <p className="text-white mb-2">
-          es una plataforma donde los administradores crean tareas y los usuarios pueden ver la lista de tareas pendientes. Los usuarios pueden confirmar cuando completan una tarea. Una solución sencilla para la gestión colaborativa de tareas.
+            It's a platform where administrators create tasks and users can view the list of pending tasks. Users can confirm when they complete a task. A simple solution for collaborative task management.
           </p>
           <a
             href="https://taskmanagerjp.netlify.app/"
@@ -48,7 +43,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"
           >
-            Ver proyecto
+            View project
           </a>
         </motion.div>
 
@@ -57,15 +52,15 @@ const Projects = () => {
         <motion.div whileHover={{ scale: 1.05 }} className="bg-slate-800/90 p-4 rounded-2xl shadow-2xl">
           <h2 className="text-xl text-green-400  font-semibold mb-2">Login</h2>
           <p className="text-white mb-2">
-          Desarrollé un sistema de autenticación basado en Firebase para gestionar el proceso de inicio de sesión de usuarios en una aplicación web. Firebase Authentication proporciona una solución segura y fácil de implementar para la gestión de usuarios, manejo de contraseñas y autenticación con proveedores externos.
-          </p>
+            I developed an authentication system based on Firebase to manage the user login process in a web application. Firebase Authentication provides a secure and easy-to-implement solution for user management, password handling, and authentication with external providers.
+        </p>
           <a
             href="https://loginjp.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"
           >
-            Ver proyecto
+             View project
           </a>
         </motion.div>
       </div>

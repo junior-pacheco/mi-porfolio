@@ -14,11 +14,12 @@ const About = () => {
 
   return (
     <div className="bg-slate-900 gap-7 text-white min-h-screen flex flex-col justify-center items-center relative">
-      <Element
-  name="about"
-  className="w-full p-5 mt-2 gap-5 flex flex-col md:flex-row justify-center items-center"
-  style={{ height: '100vh' }}
->
+    <Element
+    name="about"
+    className="w-full p-5 mt-2 gap-5 flex flex-col md:flex-row justify-center items-center"
+    style={{ height: '100vh' }}
+    >
+
 
   <div className="flex w-[70%]  flex-col justify-center items-center">
     <motion.p
@@ -55,12 +56,6 @@ const About = () => {
   <div className="rounded-full md:h-96 md:w-96 h-56 w-56 bg-gray-300 border-6 border-white mr-5 md:mr-10 flex justify-center items-center overflow-hidden" style={{backgroundImage: "url('https://img.freepik.com/psd-gratis/representacion-3d-diseno-grafico_23-2149642712.jpg?t=st=1715098023~exp=1715101623~hmac=704fd4f561d8bb0d5e9ccc914162e4ada5b01baa5e58423fce85b19d03756436&w=740')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", boxShadow: "0 0 0 6px #fff"}}>
   {/* Aquí puedes colocar el contenido alternativo si es necesario */}
 </div>
-
-
-
-
-
-
 </Element>
 
       {/* <Element
@@ -103,15 +98,21 @@ const About = () => {
       <div className="relative">
         <Element
           name="info"
-          className="w-full p-5 mt-4 flex justify-center gap-5 rounded-lg flex-col md:flex-row"
+          className="w-full p-5 mt-4 flex justify-center gap-5 rounded-lg flex-col"
         >
+              <div className='text-center mb-5'>
+        <h1 className="text-3xl font-bold text-yellow-500 mb-4">Experience</h1>
+        <p className='text-white mb-2 text-base md:text-xl'>Software and web developer at <span className='font-bold'>Colmotica S.A.S</span> since August 2022 to present</p>
+      </div>
+
+        <div className='flex justify-center gap-2'>
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="bg-slate-800/90 flex flex-col items-center shadow-2xl justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
           >
             <h2 className="text-3xl text-green-400 font-semibold mb-5">About me</h2>
             <p className="text-base">
-              Experto en diseño web comprometido con crear experiencias impresionantes mediante una combinación de habilidades sólidas en diseño y tecnología, siempre enfocado en la comunicación efectiva y la colaboración en equipo para lograr resultados excepcionales.
+            Expert in web design committed to creating stunning experiences through a combination of strong design and technology skills, always focused on effective communication and team collaboration to achieve exceptional results.
             </p>
           </motion.div>
           <motion.div
@@ -120,14 +121,14 @@ const About = () => {
           >
             <h2 className="text-3xl text-green-400 font-semibold mb-5">Skills</h2>
             <ul className="list-disc text-base list-inside">
-              <li>Desarrollo web y software con React, Next, Vite, Vue</li>
-              <li>HTML5, CSS3 y Sass</li>
-              <li>Estilización con Tailwind CSS</li>
-              <li>Desarrollo en TypeScript, JavaScript</li>
-              <li>Construcción de proyectos con Node.js-Express (básico)</li>
-              <li>Contenedorización con Docker (básico)</li>
-              <li>Inglés (medio)</li>
-              <li>Metodología SCRUM</li>
+              <li>Web and software development with React, Next, Vite, Vue</li>
+              <li>HTML5, CSS3, and Sass</li>
+              <li>Styling with Tailwind CSS</li>
+              <li>Development in TypeScript, JavaScript</li>
+              <li>Project building with Node.js-Express (basic)</li>
+              <li>Containerization with Docker (basic)</li>
+              <li>English (intermediate)</li>
+              <li>SCRUM methodology</li>
             </ul>
           </motion.div>
           <motion.div
@@ -136,13 +137,15 @@ const About = () => {
           >
             <h2 className="text-3xl text-green-400 font-semibold mb-5">Tools</h2>
             <ul className="list-disc text-base list-inside">
-              <li>Manejo de proyectos con PM2 (básico)</li>
-              <li>Visual Studio Code</li>
-              <li>Git lad</li>
+              <li>Project management with PM2 (basic)</li>
+              <li>Git (basic)</li>
               <li>Postman</li>
               <li>Npm</li>
             </ul>
           </motion.div>
+        </div>
+        
+
         </Element>
       </div>
 
