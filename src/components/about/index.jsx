@@ -54,47 +54,8 @@ const About = () => {
   </AnimatePresence>
   </div>
   <div className="rounded-full md:h-96 md:w-96 h-56 w-56 bg-gray-300 border-6 border-white mr-5 md:mr-10 flex justify-center items-center overflow-hidden" style={{backgroundImage: "url('https://img.freepik.com/psd-gratis/representacion-3d-diseno-grafico_23-2149642712.jpg?t=st=1715098023~exp=1715101623~hmac=704fd4f561d8bb0d5e9ccc914162e4ada5b01baa5e58423fce85b19d03756436&w=740')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", boxShadow: "0 0 0 6px #fff"}}>
-  {/* Aquí puedes colocar el contenido alternativo si es necesario */}
 </div>
 </Element>
-
-      {/* <Element
-        name="about"
-        className="w-full p-5 mt-2 gap-5 flex flex-col justify-center items-center"
-        style={{ height: '100vh' }}
-      >
-        <motion.p
-          whileHover={{ scale: 1.10 }}
-          className={`text-center text-4xl cursor-pointer md:text-6xl`}
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          onAnimationComplete={handleAnimationComplete}
-        >
-          Hello! I Am <span className="text-gray-100 font-bold">Elkin Pacheco</span>
-        </motion.p>
-        <motion.span
-          className={`text-center text-3xl md:text-4xl font-bold text-green-400`}
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          a developer frontend
-        </motion.span>
-        <AnimatePresence>
-          {animationComplete && (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.5 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Contact />
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </Element> */}
-
       <div className="relative">
         <Element
           name="info"
@@ -125,8 +86,8 @@ const About = () => {
               <li>HTML5, CSS3, and Sass</li>
               <li>Styling with Tailwind CSS</li>
               <li>Development in TypeScript, JavaScript</li>
-              <li>Project building with Node.js-Express (basic)</li>
-              <li>Containerization with Docker (basic)</li>
+              <li>Project building with Node.js-Express</li>
+              <li>Containerization with Docker</li>
               <li>English (intermediate)</li>
               <li>SCRUM methodology</li>
             </ul>
@@ -137,8 +98,8 @@ const About = () => {
           >
             <h2 className="text-3xl text-green-400 font-semibold mb-5">Tools</h2>
             <ul className="list-disc text-base list-inside">
-              <li>Project management with PM2 (basic)</li>
-              <li>Git (basic)</li>
+              <li>Project management with PM2</li>
+              <li>Git</li>
               <li>Postman</li>
               <li>Npm</li>
             </ul>
