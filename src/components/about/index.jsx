@@ -105,7 +105,7 @@ const About = () => {
         <p className='text-white mb-2 text-base md:text-xl'>Software and web developer at <span className='font-bold'>Colmotica S.A.S</span> since August 2022 to present</p>
       </div>
 
-        <div className='flex justify-center gap-2'>
+        <div className='flex flex-col justify-center gap-2 md:flex-row'>
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="bg-slate-800/90 flex flex-col items-center shadow-2xl justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
