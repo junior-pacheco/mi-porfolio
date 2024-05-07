@@ -16,7 +16,7 @@ const About = () => {
     <div className="bg-slate-900 gap-7 text-white min-h-screen flex flex-col justify-center items-center relative">
       <Element
   name="about"
-  className="w-full p-5 mt-2 gap-5 flex flex-col md:flex-row justify-start items-center"
+  className="w-full p-5 mt-2 gap-5 flex flex-col md:flex-row justify-center items-center"
   style={{ height: '100vh' }}
 >
 
@@ -37,7 +37,7 @@ const About = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      a developer frontend
+      a frontend developer 
     </motion.span>
   <AnimatePresence>
     {animationComplete && (
