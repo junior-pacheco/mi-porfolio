@@ -13,7 +13,7 @@ const About = () => {
 
 
   return (
-    <div className="bg-slate-900 gap-7 text-white min-h-screen flex flex-col justify-center items-center relative">
+    <div className="bg-slate-950 gap-7 text-white min-h-screen flex flex-col justify-center items-center relative">
     <Element
     name="about"
     className="w-full p-5 mt-2 gap-5 flex flex-col md:flex-row justify-center items-center"
@@ -30,7 +30,7 @@ const About = () => {
       transition={{ duration: 0.5 }}
       onAnimationComplete={handleAnimationComplete}
     >
-      Hello! I Am <span className="text-gray-100 font-bold">Elkin Pacheco</span>
+      Hello!  I Am <span className="text-gray-100 font-bold">Elkin Pacheco</span>
     </motion.p>
     <motion.span
       className={`text-center text-3xl md:text-4xl font-bold text-green-400`}
@@ -53,13 +53,13 @@ const About = () => {
     )}
   </AnimatePresence>
   </div>
-  <div className="rounded-full md:h-96 md:w-96 h-56 w-56 bg-gray-300 border-6 border-white mr-5 md:mr-10 flex justify-center items-center overflow-hidden" style={{backgroundImage: "url('https://img.freepik.com/psd-gratis/representacion-3d-diseno-grafico_23-2149642712.jpg?t=st=1715098023~exp=1715101623~hmac=704fd4f561d8bb0d5e9ccc914162e4ada5b01baa5e58423fce85b19d03756436&w=740')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", boxShadow: "0 0 0 6px #fff"}}>
+  <div className="rounded-full md:h-96 md:w-96 h-56 w-56  bg-gray-300 shadow-2xl border-6 border-white mr-5 md:mr-10 flex justify-center items-center  overflow-hidden" style={{backgroundImage: "url('https://img.freepik.com/psd-gratis/representacion-3d-diseno-grafico_23-2149642712.jpg?t=st=1715098023~exp=1715101623~hmac=704fd4f561d8bb0d5e9ccc914162e4ada5b01baa5e58423fce85b19d03756436&w=740')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", boxShadow: "0 0 0 6px #fff"}}>
 </div>
 </Element>
-      <div className="relative">
+      <div className="relative p-10 ">
         <Element
           name="info"
-          className="w-full p-5 mt-4 flex justify-center gap-5 rounded-lg flex-col"
+          className="w-full p-5 bg-slate-900 mt-4 flex justify-center gap-5 rounded-xl flex-col"
         >
               <div className='text-center mb-5'>
         <h1 className="text-3xl font-bold text-yellow-500 mb-4">Experience</h1>

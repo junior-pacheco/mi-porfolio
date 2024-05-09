@@ -6,9 +6,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Projects = () => {
   return (
-    <div className="p-10 bg-slate-900 overflow-y-auto">
-      <h1 className="text-3xl font-bold text-yellow-500 mb-4">Projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="p-10 bg-slate-950 overflow-y-auto">
+      <h1 className="text-3xl font-bold  text-yellow-500 mb-4">Projects</h1>
+      <div className="grid grid-cols-1 bg-slate-900 p-5 rounded-2xl md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Proyecto 1 */}
         <motion.div whileHover={{ scale: 1.05 }} className="bg-slate-800/90 p-4 shadow-2xl rounded-2xl ">
           <div className=' flex items-center mb-2 justify-between'>
