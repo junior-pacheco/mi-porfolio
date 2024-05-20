@@ -33,7 +33,7 @@ const About = () => {
       Hello!  I Am <span className="text-gray-100 font-bold">Elkin Pacheco</span>
     </motion.p>
     <motion.span
-      className={`text-center text-3xl md:text-4xl font-bold text-green-400`}
+      className={`text-center text-3xl md:text-4xl font-extrabold text-green-400`}
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -62,7 +62,7 @@ const About = () => {
           className="w-full p-5 bg-slate-900 mt-4 flex justify-center gap-5 rounded-xl flex-col"
         >
               <div className='text-center mb-5'>
-        <h1 className="text-3xl font-bold text-yellow-500 mb-4">Experience</h1>
+        <h1 className="text-3xl font-extrabold text-yellow-500 mb-4">Experience</h1>
         <p className='text-white mb-2 text-base md:text-xl'>Software and web developer at <span className='font-bold'>Colmotica S.A.S</span> since August 2022 to present</p>
       </div>
 
@@ -71,7 +71,7 @@ const About = () => {
             whileHover={{ scale: 1.05 }}
             className="bg-slate-800/90 flex flex-col items-center shadow-2xl justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
           >
-            <h2 className="text-3xl text-green-400 font-semibold mb-5">About me</h2>
+            <h2 className="text-3xl text-green-400 font-extrabold mb-5">About me</h2>
             <p className="text-base">
             Expert in web design committed to creating stunning experiences through a combination of strong design and technology skills, always focused on effective communication and team collaboration to achieve exceptional results.
             </p>
@@ -80,7 +80,7 @@ const About = () => {
             whileHover={{ scale: 1.05 }}
             className="flex flex-col bg-slate-800/90 shadow-2xl items-center justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
           >
-            <h2 className="text-3xl text-green-400 font-semibold mb-5">Skills</h2>
+            <h2 className="text-3xl text-green-400 font-extrabold mb-5">Skills</h2>
             <ul className="list-disc text-base list-inside">
               <li>Web and software development with React, Next, Vite, Vue</li>
               <li>HTML5, CSS3, and Sass</li>
@@ -96,7 +96,7 @@ const About = () => {
             whileHover={{ scale: 1.05 }}
             className="flex flex-col bg-slate-800/90 shadow-2xl items-center justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
           >
-            <h2 className="text-3xl text-green-400 font-semibold mb-5">Tools</h2>
+            <h2 className="text-3xl text-green-400 font-extrabold mb-5">Tools</h2>
             <ul className="list-disc text-base list-inside">
               <li>Project management with PM2</li>
               <li>Git</li>

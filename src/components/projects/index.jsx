@@ -69,12 +69,12 @@ const Projects = () => {
 
   return (
     <div className="p-10 bg-slate-950 overflow-y-auto">
-      <h1 className="text-3xl font-bold text-yellow-500 mb-4">Proyectos</h1>
+      <h1 className="text-3xl font-extrabold text-yellow-500 mb-4">Proyectos</h1>
       <div className="grid grid-cols-1 bg-slate-900 p-5 rounded-2xl md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <motion.div key={index} whileHover={{ scale: 1.05 }} className="bg-slate-800/90 p-4 shadow-2xl rounded-2xl">
             <div className='flex items-center mb-2 justify-between'>
-              <h2 className="text-xl text-green-400 font-semibold mb-2 inline-flex items-end">{project.name}</h2>
+              <h2 className="text-xl text-green-400 font-extrabold mb-2 inline-flex items-end">{project.name}</h2>
               {project.images ? (
                 <button 
                   onClick={() => openModal(project)} 
@@ -111,7 +111,7 @@ const Projects = () => {
           <div className='flex p-2 rounded-sm h-[100%] flex-col '>
             <div className='flex items-center rounded-sm  text-left  h-[7%] '>
               <button onClick={closeModal} className="absolute top-2 right-2 text-white text-3xl hover:text-gray-300"><IoIosCloseCircle size={40}/></button>
-              <h2 className="text-2xl text-yellow-500 p-10 mb-4">Imágenes - {selectedProject.name}</h2>
+              <h2 className="text-2xl text-yellow-500 font-extrabold p-10 mb-4">Imágenes - {selectedProject.name}</h2>
             </div>
             <div className='flex justify-center items-center rounded-sm overflow-hidden  h-[93%] relative'>
               {loading && (
