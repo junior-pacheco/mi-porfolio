@@ -78,7 +78,7 @@ const Projects = () => {
               {project.images ? (
                 <button 
                   onClick={() => openModal(project)} 
-                  className="flex items-center gap-3 justify-center px-1 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+                  className="flex items-center gap-3 justify-center px-2 py-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
                 >
                   View <BsFillImageFill className="mr-2" />
                 </button>
