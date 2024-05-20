@@ -62,7 +62,7 @@ const Projects = () => {
     {
       name: 'Login',
       description: "I developed an authentication system based on Firebase to manage the user login process in a web application. Firebase Authentication provides a secure and easy-to-implement solution for user management, password handling, and authentication with external providers.",
-      images: ['/img/loginFire.png'],
+      images: ['/img/imagen1.png','/img/imagen2.png'],
     },
   ];
 
