@@ -53,7 +53,7 @@ const About = () => {
     )}
   </AnimatePresence>
   </div>
-  <div className="rounded-full md:h-96 md:w-96 h-56 w-56  bg-gray-300 shadow-2xl border-6 border-white mr-5 md:mr-10 flex justify-center items-center  overflow-hidden" style={{backgroundImage: "url('https://img.freepik.com/psd-gratis/representacion-3d-diseno-grafico_23-2149642712.jpg?t=st=1715098023~exp=1715101623~hmac=704fd4f561d8bb0d5e9ccc914162e4ada5b01baa5e58423fce85b19d03756436&w=740')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", boxShadow: "0 0 0 6px #fff"}}>
+  <div className="rounded-full md:h-96 md:w-96 h-56 w-56  bg-gray-300  border-6 shadow-2xl border-white mr-5 md:mr-10 flex justify-center items-center  overflow-hidden" style={{backgroundImage: "url('https://img.freepik.com/psd-gratis/representacion-3d-diseno-grafico_23-2149642712.jpg?t=st=1715098023~exp=1715101623~hmac=704fd4f561d8bb0d5e9ccc914162e4ada5b01baa5e58423fce85b19d03756436&w=740')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", boxShadow: "0 0 0 6px #fff"}}>
 </div>
 </Element>
       <div className="relative p-10 ">
@@ -63,13 +63,13 @@ const About = () => {
         >
               <div className='text-center mb-5'>
         <h1 className="text-3xl font-extrabold text-yellow-500 mb-4">Experience</h1>
-        <p className='text-white mb-2 text-base md:text-xl'>Software and web developer at <span className='font-bold'>Colmotica S.A.S</span> since August 2022 to present</p>
+        <p className=' mb-2 text-base md:text-xl'>Software and web developer at <span className='font-bold'>Colmotica S.A.S</span> since August 2022 to present</p>
       </div>
 
         <div className='flex flex-col justify-center gap-2 md:flex-row'>
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="bg-slate-800/90 flex flex-col items-center shadow-2xl justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
+            className="bg-slate-800/90 flex flex-col  items-center shadow-2xl justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
           >
             <h2 className="text-3xl text-green-400 font-extrabold mb-5">About me</h2>
             <p className="text-base">

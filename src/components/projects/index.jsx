@@ -80,7 +80,7 @@ const Projects = () => {
                   onClick={() => openModal(project)} 
                   className="flex items-center gap-3 justify-center px-1 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
                 >
-                  Ver <BsFillImageFill className="mr-2" />
+                  View <BsFillImageFill className="mr-2" />
                 </button>
               ) : (
                 <IconJamPadlockF className="w-6" /> 
