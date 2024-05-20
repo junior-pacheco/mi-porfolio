@@ -46,25 +46,26 @@ const Projects = () => {
   const projects = [
     {
       name: 'Mvsion',
-      description: "MVision es un software para gestionar fotos y videos en pantallas de salas de espera y publicidad. Permite crear y configurar pantallas, subir contenido, y definir horarios y orden de reproducción. Las pantallas se conectan a un hardware controlado por MVision para administrar el modo quiosco.",
+      description: "MVision is software for managing photos and videos on waiting room screens and advertising. It allows you to create and configure screens, upload content, and define schedules and playback order. The screens are connected to hardware controlled by MVision to manage kiosk mode.",
       images: ['/img/login.jpg', '/img/img1.jpg','/img/img2.jpg','/img/img3.jpg','/img/img4.jpg'],
     },
     {
       name: 'Tekneo',
-      description: "Se trata de una solución tecnológica destinada a mejorar la eficacia y la seguridad en las empresas, permitiendo visualizar las cámaras de seguridad, llevar un registro de las horas de entrada y gestionar el acceso a las distintas zonas conectadas a los sistemas domóticos.",
+      description: "It is a technological solution aimed at improving efficiency and security in companies, allowing you to view security cameras, keep track of entry times, and manage access to different areas connected to home automation systems.",
       images: ['/img/tekneo1.jpg', '/img/tekneo2.jpg','/img/tekneo3.jpg','/img/tekneo4.jpg'],
     },
     {
       name: 'Node maker',
-      description: "Es un proyecto que simplifica la creación y gestión de fuentes de datos KNX y MQTT en una red local. Facilita la comunicación entre ellas, permite crear perfiles y rutas, y ofrece una interfaz de supervisión para la visualización de datos. El software agiliza la transferencia de datos entre fuentes, promoviendo una gestión eficiente de la red.",
+      description: "It is a project that simplifies the creation and management of KNX and MQTT data sources on a local network. It facilitates communication between them, allows you to create profiles and routes, and offers a monitoring interface for data visualization. The software streamlines data transfer between sources, promoting efficient network management.",
       images: ['/img/node1.jpg', '/img/node2.jpg'],
     },
     {
       name: 'Login',
-      description: "Es un proyecto que simplifica la creación y gestión de fuentes de datos KNX y MQTT en una red local. Facilita la comunicación entre ellas, permite crear perfiles y rutas, y ofrece una interfaz de supervisión para la visualización de datos. El software agiliza la transferencia de datos entre fuentes, promoviendo una gestión eficiente de la red.",
+      description: "I developed an authentication system based on Firebase to manage the user login process in a web application. Firebase Authentication provides a secure and easy-to-implement solution for user management, password handling, and authentication with external providers.",
       images: ['/img/loginFire.png'],
     },
   ];
+
 
   return (
     <div className="p-10 bg-slate-950 overflow-y-auto">
