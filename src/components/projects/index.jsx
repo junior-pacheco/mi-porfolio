@@ -78,7 +78,7 @@ const Projects = () => {
               {project.images ? (
                 <button 
                   onClick={() => openModal(project)} 
-                  className="flex items-center gap-3 justify-center px-2 py-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+                  className="flex items-center gap-3 justify-center px-2 py-2 bg-white text-slate-950 rounded-xl hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
                 >
                   View <BsFillImageFill className="mr-2" />
                 </button>
@@ -111,7 +111,7 @@ const Projects = () => {
           <div className='flex p-2 rounded-sm h-[100%] flex-col '>
             <div className='flex items-center rounded-sm  text-left  h-[7%] '>
               <button onClick={closeModal} className="absolute top-2 right-2 text-white text-3xl hover:text-gray-300"><IoIosCloseCircle size={40}/></button>
-              <h2 className="text-2xl text-yellow-500 font-extrabold p-10 mb-4">Imágenes - {selectedProject.name}</h2>
+              <h2 className="text-2xl text-green-500 font-extrabold p-10 mb-4">{selectedProject.name}</h2>
             </div>
             <div className='flex justify-center items-center rounded-sm overflow-hidden  h-[93%] relative'>
               {loading && (
