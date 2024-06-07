@@ -1,6 +1,6 @@
 
 import { useState,useEffect } from 'react';
-import { IconTailwindcss, Iconjs, IconReact, IconNextjs, IconTypescript, IconJamPadlockF, DeviconNestjs } from '../../../public/icons/icons';
+import { IconTailwindcss, Iconjs, IconReact, IconNextjs, IconTypescript, IconJamPadlockF, DeviconNestjs, IconFeGit } from '../../../public/icons/icons';
 import { motion } from 'framer-motion';
 import Modal from 'react-modal';
 import Slider from 'react-slick';
@@ -16,9 +16,9 @@ const Projects = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [loading, setLoading] = useState(true); // Estado para controlar la carga
+  const [loading, setLoading] = useState(true); 
 
-    // Agrega una nueva clase al body cuando el modal se abre
+
     useEffect(() => {
       if (modalIsOpen) {
         document.body.classList.add("modal-open");
@@ -30,7 +30,7 @@ const Projects = () => {
 
   const openModal = (project) => {
     setSelectedProject(project);
-    setLoading(true); // Activa el estado de carga al abrir el modal
+    setLoading(true); 
     setModalIsOpen(true);
   };
 
@@ -40,7 +40,7 @@ const Projects = () => {
   };
 
   const handleImageLoad = () => {
-    setLoading(false); // Desactiva el estado de carga cuando la imagen se carga
+    setLoading(false); 
   };
 
   const projects = [
@@ -68,43 +68,46 @@ const Projects = () => {
 
 
   return (
-    <div className="p-10 bg-slate-950 overflow-y-auto">
-      <h1 className="text-3xl font-extrabold text-yellow-500 mb-4">Proyectos</h1>
-      <div className="grid grid-cols-1 bg-slate-900 p-5 rounded-2xl md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
-          <motion.div key={index} whileHover={{ scale: 1.05 }} className="bg-slate-800/90 p-4 shadow-2xl rounded-2xl">
-            <div className='flex items-center mb-2 justify-between'>
-              <h2 className="text-xl text-green-400 font-extrabold mb-2 inline-flex items-end">{project.name}</h2>
-              {project.images ? (
-                <button 
-                  onClick={() => openModal(project)} 
-                  className="flex items-center gap-3 justify-center px-2 py-2 bg-white text-slate-950 rounded-xl hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                >
-                  View <BsFillImageFill className="mr-2" />
-                </button>
-              ) : (
-                <IconJamPadlockF className="w-6" /> 
-              )}
-            </div>
-            <p className="text-white mb-2">{project.description}</p>
-            <div className='flex gap-3'>
-              <Iconjs className="w-8" />
-              {/* Renderiza los iconos aquí */}
-              <IconTypescript className="w-8" />
-              <IconTailwindcss className="w-8" />
-              <IconNextjs className="w-8" />
-              <IconReact className="w-8" />
-              <DeviconNestjs className="w-8" />
-            </div>
-          </motion.div>
-        ))}
+    <div className="p-10 overflow-y-auto">
+      <h1 className="text-3xl font-extrabold text-yellow-500 mb-4">Projects</h1>
+      <div className="grid grid-cols-1  p-5 rounded-2xl md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {projects.map((project, index) => (
+    <motion.div key={index} whileHover={{ scale: 1.05 }} className="bg-slate-950 border-2  border-white p-4 shadow-2xl rounded-2xl flex flex-col justify-between">
+      <div>
+        <div className='flex justify-center items-center mb-2'>
+          <h2 className="text-2xl text-white font-extrabold mb-2 inline-flex">{project.name}</h2>
+        </div>
+        <p className="text-gray-200 mb-2">{project.description}</p>
+        <div className='flex gap-3 mb-2'>
+          <Iconjs className="w-8" />
+          <IconTypescript className="w-8" />
+          <IconTailwindcss className="w-8" />
+          <IconNextjs className="w-8" />
+          <IconReact className="w-8" />
+          <DeviconNestjs className="w-8" />
+        </div>
       </div>
+      <div className='flex justify-center items-center w-full mt-auto'>
+        {project.images ? (
+          <button 
+            onClick={() => openModal(project)} 
+            className="flex items-center w-full gap-3 justify-center rounded-lg text-xl px-2 py-2 bg-slate-800 hover:bg-slate-700 text-white"
+          >
+            View project <BsFillImageFill className="mr-2" />
+          </button>
+        ) : (
+          <IconJamPadlockF className="w-6" /> 
+        )}
+      </div>
+    </motion.div>
+  ))}
+</div>
 
       <Modal 
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Project Images"
-        className="bg-slate-900 p-5 rounded-2xl shadow-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] h-[95%]"
+        className="bg-slate-950 p-5 rounded-2xl shadow-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] h-[95%]"
         overlayClassName="fixed inset-0  bg-black bg-opacity-70"
       >
         {selectedProject && (
@@ -129,7 +132,7 @@ const Projects = () => {
                       src={image} 
                       alt={`Project Image ${index + 1}`} 
                       className="w-full h-auto rounded-xl" 
-                      onLoad={handleImageLoad} // Llama a handleImageLoad cuando la imagen se carga
+                      onLoad={handleImageLoad} 
                     />
                   </div>
                 ))}

@@ -69,28 +69,26 @@ const About = () => {
       <div className="relative p-10 ">
         <Element
           name="info"
-          className="w-full p-5 bg-slate-900 mt-4 flex justify-center gap-5 rounded-xl flex-col"
+          className="w-full p-5  mt-4 flex justify-center gap-5 rounded-xl flex-col"
         >
               <div className='text-center mb-5'>
         <h1 className="text-3xl font-extrabold text-yellow-500 mb-4">Experience</h1>
-        <p className=' mb-2 text-base md:text-xl'>Software and web developer at <span className='font-bold'>Colmotica S.A.S</span> since August 2022 to present</p>
+        <p className=' mb-2 text-base md:text-2xl'>Software and web developer at <span className='font-bold'>Colmotica S.A.S</span> since August 2022 to present</p>
       </div>
 
         <div className='flex flex-col justify-center gap-2 md:flex-row'>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="bg-slate-800/90 flex flex-col  items-center shadow-2xl justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
+          <div
+            className="bg-slate-950 flex flex-col  items-center  justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
           >
-            <h2 className="text-3xl text-green-400 font-extrabold mb-5">About me</h2>
+            <h2 className="text-3xl text-white font-extrabold mb-5">About me</h2>
             <p className="text-base">
             Expert in web design committed to creating stunning experiences through a combination of strong design and technology skills, always focused on effective communication and team collaboration to achieve exceptional results.
             </p>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex flex-col bg-slate-800/90 shadow-2xl items-center justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
+          </div>
+          <div
+            className="flex flex-col bg-slate-950  items-center justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
           >
-            <h2 className="text-3xl text-green-400 font-extrabold mb-5">Skills</h2>
+            <h2 className="text-3xl text-white font-extrabold mb-5">Skills</h2>
             <ul className="list-disc text-base list-inside">
               <li>Web and software development with React, Next, Vite, Vue</li>
               <li>HTML5, CSS3, and Sass</li>
@@ -101,19 +99,18 @@ const About = () => {
               <li>English (intermediate)</li>
               <li>SCRUM methodology</li>
             </ul>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex flex-col bg-slate-800/90 shadow-2xl items-center justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
+          </div>
+          <div
+            className="flex flex-col bg-slate-950  items-center justify-start p-5 rounded-2xl w-full md:w-1/3 lg:w-1/3 card"
           >
-            <h2 className="text-3xl text-green-400 font-extrabold mb-5">Tools</h2>
-            <ul className="list-disc text-base list-inside">
+            <h2 className="text-3xl text-white font-extrabold mb-5">Tools</h2>
+            <ul className="list-disc text-base text-gray-200 list-inside">
               <li>Project management with PM2</li>
               <li>Git</li>
               <li>Postman</li>
               <li>Npm</li>
             </ul>
-          </motion.div>
+          </div>
         </div>
         
 

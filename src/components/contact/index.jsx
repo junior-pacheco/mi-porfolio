@@ -1,4 +1,3 @@
-import React from 'react';
 import CvElkin from '../../../public/pdf/cv.pdf';
 
 const Contact = () => {
