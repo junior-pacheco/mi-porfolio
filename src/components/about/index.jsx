@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import {  useState } from 'react';
 import Projects from '../projects';
 import Contact from '../contact';
 import { Element } from 'react-scroll';
@@ -19,7 +19,7 @@ const About = () => {
   className="w-full p-5 mt-2 gap-5 flex flex-col md:flex-row justify-center items-center"
   style={{ height: "100vh" }}
 >
-  <div className="flex w-[70%] flex-col justify-center items-center">
+  <div className="flex w-[70%] flex-col gap-2 justify-center items-center">
     <motion.p
       whileHover={{ scale: 1.10 }}
       className={`text-center text-4xl cursor-pointer md:text-6xl`}

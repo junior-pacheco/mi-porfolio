@@ -1,6 +1,6 @@
 
 import { useState,useEffect } from 'react';
-import { IconTailwindcss, Iconjs, IconReact, IconNextjs, IconTypescript, IconJamPadlockF, DeviconNestjs, IconFeGit } from '../../../public/icons/icons';
+import { IconTailwindcss, Iconjs, IconReact, IconNextjs, IconTypescript, IconJamPadlockF, DeviconNestjs } from '../../../public/icons/icons';
 import { motion } from 'framer-motion';
 import Modal from 'react-modal';
 import Slider from 'react-slick';
