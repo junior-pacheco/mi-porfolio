@@ -7,7 +7,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BsFillImageFill } from 'react-icons/bs';
-import { ClipLoader } from 'react-spinners'; // Importa el spinner
+import { ClipLoader } from 'react-spinners';
 import { IoIosCloseCircle } from "react-icons/io";
 
 Modal.setAppElement('#root');
@@ -57,7 +57,7 @@ const Projects = () => {
     {
       name: 'Node maker',
       description: "It is a project that simplifies the creation and management of KNX and MQTT data sources on a local network. It facilitates communication between them, allows you to create profiles and routes, and offers a monitoring interface for data visualization. The software streamlines data transfer between sources, promoting efficient network management.",
-      images: ['/img/node1.jpg', '/img/node2.jpg'],
+      images: ['/img/node12025.webp', '/img/node22025.webp','/img/node32025.webp'],
     },
     {
       name: 'Login',

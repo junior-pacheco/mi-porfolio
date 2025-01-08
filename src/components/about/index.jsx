@@ -11,7 +11,6 @@ const About = () => {
     setAnimationComplete(true);
   };
 
-
   return (
     <div className="bg-slate-950 gap-7 text-white min-h-screen flex flex-col justify-center items-center relative">
  <Element
